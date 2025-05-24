@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>JavaScript Events and Basic Interactivity</title>
+    </head>
+
+    <body>
+        <!-- This button demonstrates basic JavaScript event handling for click and hover interactions -->
+        <button id="myButton">Click me</button>
+
+        <!-- Slideshow displaying images of different bear species. JavaScript cycles through these images automatically. -->
+        <div id="slideshow">
+            <img src="./Images/Black.jpg" alt="Black Bear">
+            <img src="./Images/Polar.jpg" alt="Polar Bear">
+            <img src="./Images/Grizzly.jpg" alt="Grizzly Bear">
+        </div>
+
+        <!-- Tabbed content section: Users can switch between Overview, Features, and Contact tabs to view different information about bears. JavaScript handles tab switching and active state. -->
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="tab-button active">Overview</div>
+                <div class="tab-button">Features</div>
+                <div class="tab-button">Contact</div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h3>Welcome to Bear World</h3>
+                    <p>Discover fascinating facts about different bear species and their unique habitats. Explore the wonders of the animal kingdom with us!</p>
+                </div>
+                <div class="tab-pane">
+                    <h3>Bear Species Features</h3>
+                    <p>Learn about the distinctive characteristics of Black Bears, Polar Bears, and Grizzly Bears. Find out what makes each species special and how they adapt to their environments.</p>
+                </div>
+                <div class="tab-pane">
+                    <h3>Contact & Support</h3>
+                    <p>Have questions or want to know more? Reach out to our team for more information about bears, conservation efforts, or educational resources.</p>
+                </div>
+            </div>
+        </div>
+
+        <form id="myForm">
+            <!-- The placeholder attribute provides a hint to the user about what to enter in the input field -->
+            <input type="text" placeholder="Enter your name" required>
+            <!-- The pattern attribute ensures the email input matches a valid email format -->
+            <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address (e.g., user@example.com)" required>
+            <!-- The minlength attribute ensures the password is at least 8 characters long to encourage stronger passwords -->
+            <input type="password" placeholder="Password" minlength="8" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>

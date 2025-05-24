@@ -1,0 +1,79 @@
+/* Button styling for the main interactive button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+
+/* Slideshow styling */
+
+/* Slideshow container styling */
+#slideshow {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Slideshow images styling */
+#slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Tabs styling */
+
+/* Tabs container styling */
+.tabs {
+  margin-top: 20px;
+}
+
+/* Tab header styling */
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Individual tab button styling */
+.tab-button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Active tab button styling */
+.tab-button.active {
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* Tab content area styling */
+.tab-content {
+  padding: 20px;
+}
+
+/* Hide inactive tab panes */
+.tab-pane {
+  display: none;
+}
+
+/* Show active tab pane */
+.tab-pane.active {
+  display: block;
+}
+
+
+/* Form input styling */
+form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* Hovered class for button hover effect. Changes background and text color on hover, with a smooth transition for both properties */
+.hovered {
+  background-color: #2196F3;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
